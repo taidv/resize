@@ -14,10 +14,11 @@ http://golang.jp/install<br />
 $ go get github.com/nfnt/resize
 ```
 
-### ソースをクローン
+### GOプログラム作成
 ```
-$ cd $HOME/go/src
-$ git clone https://github.com/taidv/resize
+$ cp -r ~/resize $HOME/go/src/resize
+$ cd $HOME/go/src/resize
+$ go install
 ```
 ## パラメータ設定
 ### パス設定
@@ -28,8 +29,8 @@ $ git clone https://github.com/taidv/resize
 <br />
 例
 ```
-var rawDir string = "/Users/nci/Downloads/media/"
-var resizedDir string = "/Users/nci/Desktop/media/"
+var rawDir string = "~/Downloads/media/"
+var resizedDir string = "~/Desktop/media/"
 ```
 ### 圧縮率設定
 `resize.go`ファイルの16行に圧縮率を変更ください。<br />
@@ -49,5 +50,3 @@ go install
 ```
 $ resize
 ```
-
-

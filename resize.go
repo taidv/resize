@@ -14,8 +14,8 @@ import (
 )
 
 const quality = 50
-var rawDir string = "/Users/nci/Downloads/media/"
-var resizedDir string = "/Users/nci/Desktop/media/"
+var rawDir string = "~/Downloads/media/"
+var resizedDir string = "~/Desktop/media/"
 var resizedCount = 0
 var resizedErrors = 0
 
