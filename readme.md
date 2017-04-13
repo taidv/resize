@@ -1,7 +1,7 @@
 # Resize
 
 画像のサイズ変更と圧縮ツール<br />
-https://github.com/nfnt/resizeの実装<br />
+https://github.com/nfnt/resize の実装<br />
 
 ## 環境準備
 
@@ -42,7 +42,7 @@ const quality = 50
 ```
 設定が終わった際に以下のコマンドを実行ください。
 ```
-go install
+$ go install
 ```
 
 ## 使い方
