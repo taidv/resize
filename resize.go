@@ -13,6 +13,7 @@ import (
     "strings"
 )
 
+const quality = 50
 var rawDir string = "/Users/nci/Downloads/media/"
 var resizedDir string = "/Users/nci/Desktop/media/"
 var resizedCount = 0
@@ -108,9 +109,9 @@ func resizeImage(path string, f os.FileInfo, err error) error {
     // write new image to file
     switch format {
         case "jpg":
-            jpeg.Encode(fout, m, &jpeg.Options{50})
+            jpeg.Encode(fout, m, &jpeg.Options{quality})
         case "jpeg":
-            jpeg.Encode(fout, m, &jpeg.Options{50})
+            jpeg.Encode(fout, m, &jpeg.Options{quality})
         case "png":
             png.Encode(fout, m)
         case "gif":
