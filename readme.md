@@ -5,7 +5,7 @@ https://github.com/nfnt/resizeの実装<br />
 
 ## 環境準備
 
-###Go言語のインストール
+### Go言語のインストール
 https://golang.org/doc/install<br />
 http://golang.jp/install<br />
 
